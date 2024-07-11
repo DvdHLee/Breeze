@@ -12,11 +12,9 @@ function App() {
     setLandingLocation(event.target.location.value);
   };
 
-  console.log(landingLocation)
-
   return (
     <div className="App">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Routes>
           <Route path='/' element={<Landing searched={searched} />}></Route>
           <Route path='/Home' element={<Home landingLocation={landingLocation} />}></Route>
