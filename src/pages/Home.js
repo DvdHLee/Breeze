@@ -39,7 +39,7 @@ function Home( {landingLocation} ) {
         <div className="home">
             <Header searched={searched}></Header>
             {data && !loading && <Weather data={data}></Weather>}
-            {loading && <div className='loading__container'><img src='../assets/loading.png' alt='loading img' className='loading'></img></div>}
+            {loading && <div className='loading__container'><img src='assets/loading.png' alt='loading img' className='loading'></img></div>}
         </div>
     )
 }
